@@ -1,3 +1,11 @@
+## Updated to Ruby 3
+
+This version has been updated to work with Ruby 3
+
+- Replace URI.escape with URI::DEFAULT_PARSER.escape
+- Remove releasinator gem because it's fixed to a version of json gem that isn't compatible
+- Add rexml gem
+
 ## Paypal HttpClient
 
 PaypasHttp is a generic HTTP Client.
@@ -70,10 +78,13 @@ end
 ```
 
 ### Serializer
+
 (De)Serialization of request and response data is done by instances of [`Encoder`](./lib/paypalhttp/encoder.rb). PayPalHttp currently supports `json` encoding out of the box.
 
 ## License
+
 PayPalHttp-Ruby is open source and available under the MIT license. See the [LICENSE](./LICENSE) file for more information.
 
 ## Contributing
+
 Pull requests and issues are welcome. Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for more details.
